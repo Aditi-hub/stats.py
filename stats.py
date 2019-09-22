@@ -7,11 +7,11 @@ Created on Thu Sep 12 13:17:01 2019
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.stats as stats
-
-
-
 import pandas as pd
 var=pd.read_csv("sunspots.csv")
+print('No. of Observation: ',var['Sunspots'].count())
+print('Minimum: ',var['Sunspots'].min())
+print('Maximum: ',var['Sunspots'].max())
 print('Mean: ',var['Sunspots'].mean())
 print('Meadian: ',var['Sunspots'].median())
 print('Variance: ',var['Sunspots'].var())
